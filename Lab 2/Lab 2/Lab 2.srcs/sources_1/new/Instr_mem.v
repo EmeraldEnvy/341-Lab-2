@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module InstMem(
+module Instr_mem(
     input [7:0] addr,
     output wire [31:0] instruction
     );

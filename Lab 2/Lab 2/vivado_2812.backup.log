@@ -2,10 +2,10 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Wed Oct 28 21:12:33 2020
-# Process ID: 32732
+# Start of session at: Wed Oct 28 18:40:27 2020
+# Process ID: 2812
 # Current directory: C:/Users/selin/Documents/CECS 341/Lab2/341-Lab-2/Lab 2/Lab 2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2480 C:\Users\selin\Documents\CECS 341\Lab2\341-Lab-2\Lab 2\Lab 2\Lab 2.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26408 C:\Users\selin\Documents\CECS 341\Lab2\341-Lab-2\Lab 2\Lab 2\Lab 2.xpr
 # Log file: C:/Users/selin/Documents/CECS 341/Lab2/341-Lab-2/Lab 2/Lab 2/vivado.log
 # Journal file: C:/Users/selin/Documents/CECS 341/Lab2/341-Lab-2/Lab 2/Lab 2\vivado.jou
 #-----------------------------------------------------------
@@ -18,6 +18,7 @@ WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 682.969 ; gain = 77.375
 update_compile_order -fileset sources_1
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Oct 28 21:26:17 2020...
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 28 18:49:53 2020...
