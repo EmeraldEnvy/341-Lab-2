@@ -1,0 +1,112 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 2812
+License: Customer
+
+Current time: 	Wed Oct 28 18:40:51 PDT 2020
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 150
+Available screens: 1
+Available disk space: 36 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=18
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	selin
+User home directory: C:/Users/selin
+User working directory: C:/Users/selin/Documents/CECS 341/Lab2/341-Lab-2/Lab 2/Lab 2
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.2
+RDI_DATADIR: C:/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/selin/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/selin/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/selin/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/selin/Documents/CECS 341/Lab2/341-Lab-2/Lab 2/Lab 2/vivado.log
+Vivado journal file location: 	C:/Users/selin/Documents/CECS 341/Lab2/341-Lab-2/Lab 2/Lab 2/vivado.jou
+Engine tmp dir: 	C:/Users/selin/Documents/CECS 341/Lab2/341-Lab-2/Lab 2/Lab 2/.Xil/Vivado-2812-DESKTOP-S37HO3V
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	132 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 573 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\selin\Documents\CECS 341\Lab2\341-Lab-2\Lab 2\Lab 2\Lab 2.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// Tcl Message: open_project {C:/Users/selin/Documents/CECS 341/Lab2/341-Lab-2/Lab 2/Lab 2/Lab 2.xpr} 
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/selin/Documents/CECS 341/Lab2/341-Lab-2/Lab 2/Lab 2/Lab 2.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Alex/Desktop/CS/CECS 341/Xilinx/Lab 2.1/341-Lab-2/Lab 2/Lab 2' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 119 MB (+122744kb) [00:00:13]
+// [Engine Memory]: 632 MB (+510802kb) [00:00:13]
+// WARNING: HEventQueue.dispatchEvent() is taking  3608 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 657 MB. GUI used memory: 59 MB. Current time: 10/28/20, 6:40:56 PM PDT
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 682.969 ; gain = 77.375 
+// Project name: Lab 2; location: C:/Users/selin/Documents/CECS 341/Lab2/341-Lab-2/Lab 2/Lab 2; part: xc7k70tfbv676-1
+dismissDialog("Open Project"); // bB (cr)
+// Tcl Message: update_compile_order -fileset sources_1 
+// [Engine Memory]: 676 MB (+12898kb) [00:00:36]
+// PAPropertyPanels.initPanels (FlipFlop.v) elapsed time: 0.2s
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FlipFlop (FlipFlop.v)]", 1, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FlipFlop (FlipFlop.v)]", 1, false, false, false, false, false, true); // B (F, cr) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 684 MB. GUI used memory: 61 MB. Current time: 10/28/20, 6:41:18 PM PDT
+selectCodeEditor("FlipFlop.v", 401, 306); // ch (w, cr)
