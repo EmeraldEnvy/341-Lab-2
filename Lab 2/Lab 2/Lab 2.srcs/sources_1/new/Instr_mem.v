@@ -1,13 +1,11 @@
 `timescale 1ns / 1ps
-
 module Instr_mem(
     input [7:0] addr,
     output wire [31:0] instruction
     );
     
-    reg[31:0] memory[63:0];
-    assign instruction = memory[addr];
-    always @(*)
+    reg[31:0] memory[0:63];
+    initial
     begin
         memory[0] = 32'h00007033; // and r0, r0, r0 32'h00000000
         memory[1] = 32'h00100093; // addi r1, r0, 1 32'h00000001
@@ -27,44 +25,7 @@ module Instr_mem(
         memory[15] = 32'h8d35e793; // ori r15, r11, "8d3" 32'hfffff8d7
         memory[16] = 32'h4d26a813; // if r13 is less than 32'h000004D2 then r16 = 1 32'h00000001
         memory[17] = 32'h4d244893; // nori r17, r8, "4D2" 32'hfffffb2C
-        /*
-        case(addr)
-        32'h00000000:
-            inst = 32'h00007033;
-        32'h00000001:
-            inst = 32'h00100093;
-        32'h00000002:
-            inst = 32'h00200113;
-        32'h00000004:
-            inst = 32'h00308193;
-        32'h00000005:
-            inst = 32'h00408213;
-        32'h00000007:
-            inst = 32'h00510293;
-        32'h00000008:
-            inst = 32'h00610313;
-        32'h0000000B:
-            inst = 32'h00718393;
-        32'h00000003:
-            inst = 32'h00208433;
-        32'hfffffffe:
-            inst = 32'h404404b3;
-        32'h00000000:
-            inst = 32'h00317533;
-        32'h00000005:
-            inst = 32'h0041e5b3;
-        32'h00000001:
-            inst = 32'h0041a633;
-        32'hfffffff4:
-            inst = 32'h007346b3;
-        32'h000004D2:
-            inst = 32'h4d34f713;
-        32'hfffff8d7:
-            inst = 32'h8d35e793;
-        32'h00000001:
-            inst = 32'h4d26a813;
-        32'hfffffb2C:
-            inst = 32'h4d244893;
-        */
     end
+    assign instruction = memory[addr];
 endmodule
+

@@ -1,0 +1,130 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Oct 31 14:32:37 2020
+# Process ID: 2540
+# Current directory: C:/Users/mcvle/Desktop/341-Lab-2/Lab 2/Lab 2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19312 C:\Users\mcvle\Desktop\341-Lab-2\Lab 2\Lab 2\Lab 2.xpr
+# Log file: C:/Users/mcvle/Desktop/341-Lab-2/Lab 2/Lab 2/vivado.log
+# Journal file: C:/Users/mcvle/Desktop/341-Lab-2/Lab 2/Lab 2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/mcvle/Desktop/341-Lab-2/Lab 2/Lab 2/Lab 2.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source Instr_mem.tcl
+add_force {/Instr_mem/addr} -radix hex {C 0ns}
+run all
+add_force {/Instr_mem/addr} -radix hex {16 0ns}
+run all
+add_force {/Instr_mem/addr} -radix hex {c 0ns}
+run all
+add_force {/Instr_mem/addr} -radix hex {3 0ns}
+run all
+add_force {/Instr_mem/addr} -radix unsigned {3 0ns}
+run all
+run all
+add_force {/Instr_mem/addr} -radix hex {0c 0ns} -cancel_after 10
+run all
+add_force {/Instr_mem/addr} -radix hex {0c 0ns}
+run 10 us
+add_force {/Instr_mem/instruction} -radix hex {00308193 0ns}
+run 10 us
+run all
+current_wave_config {Untitled 1}
+remove_forces { {/Instr_mem/instruction} }
+run all
+current_wave_config {Untitled 1}
+remove_forces { {/Instr_mem/instruction} }
+run all
+run all
+add_force {/Instr_mem/addr} -radix hex {0c 0ns}
+run all
+run all
+run all
+close_sim
+launch_simulation
+source Instr_mem.tcl
+add_force {/Instr_mem/addr} -radix hex {0c 0ns}
+run all
+run all
+run all
+add_force {/Instr_mem/addr} -radix hex {c 0ns}
+run all
+add_force {/Instr_mem/addr} -radix hex {c 0ns}
+run all
+run 10 us
+run 10 us
+close_sim
+launch_simulation
+source Instr_mem.tcl
+add_force {/Instr_mem/addr} -radix hex {c 0ns}
+run 10 us
+add_force {/Instr_mem/instruction} -radix hex {00308193 0ns}
+run 10 us
+current_wave_config {Untitled 3}
+remove_forces { {/Instr_mem/instruction} }
+run 10 us
+run 10 us
+add_force {/Instr_mem/addr} -radix hex {c 0ns}
+run 10 us
+add_force {/Instr_mem/addr} -radix hex {0c 0ns}
+run 10 us
+close_sim
+launch_simulation
+source Instr_mem.tcl
+add_force {/Instr_mem/addr} -radix hex {0c 0ns}
+run 10 us
+close_sim
+launch_simulation
+source Instr_mem.tcl
+add_force {/Instr_mem/addr} -radix hex {0c 0ns}
+run 10 us
+close_sim
+launch_simulation
+source Instr_mem.tcl
+add_force {/Instr_mem/addr} -radix hex {0c 0ns}
+run 10 us
+run 10 ns
+run 10 ns
+run 10 ns
+close_sim
+launch_simulation
+source Instr_mem.tcl
+add_force {/Instr_mem/addr} -radix hex {0c 0ns}
+run 10 ns
+add_force {/Instr_mem/addr} -radix hex {0c 0ns}
+close_sim
+launch_simulation
+source Instr_mem.tcl
+add_force {/Instr_mem/addr} -radix hex {0c 0ns}
+run 10 ns
+add_force {/Instr_mem/addr} -radix hex {3 0ns}
+run 10 ns
+add_force {/Instr_mem/addr} -radix hex {16 0ns}
+run 10 ns
+run 10 ns
+close_sim
+launch_simulation
+source Instr_mem.tcl
+add_force {/Instr_mem/addr} -radix hex {16 0ns}
+run 10 ns
+add_force {/Instr_mem/addr} -radix unsigned {16 0ns}
+run 10 ns
+add_force {/Instr_mem/addr} -radix dec {16 0ns}
+run 10 ns
+add_force {/Instr_mem/addr} -radix hex {3 0ns}
+add_force {/Instr_mem/addr} -radix unsigned {3 0ns}
+run 10 ns
+add_force {/Instr_mem/addr} -radix unsigned {16 0ns}
+run 10 ns
+add_force {/Instr_mem/addr} -radix unsigned {3 0ns}
+run 10 ns
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top RegFile [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+close_sim

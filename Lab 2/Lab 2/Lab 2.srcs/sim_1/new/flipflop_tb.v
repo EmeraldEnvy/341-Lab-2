@@ -1,26 +1,68 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 10/28/2020 10:12:05 PM
-// Design Name: 
-// Module Name: flipflop_tb
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+module flipflop_tb();
+
+reg clk;
+reg reset;
+reg [7:0]d;
+wire [7:0]q;
+
+FlipFlop dff(clk,reset,d,q);
+
+initial begin
+  
+  clk=0;
+
+     forever #20 clk = ~clk;  // clock duration is 20 ns
+
+end 
 
 
-module flipflop_tb(
+initial begin 
 
-    );
-endmodule
+ d <= 8'b00111000; //set d to hex 38 as a binary number (testing input)
+ reset=1;
+ 
+ #100; //clock signal with duration 100ns
+ 
+ reset=0;
+ d <= 8'b00111000; 
+ 
+ #20
+
+ reset=0;
+
+ d <= 8'b11110000; //set d to hex f0 as a binary number (testing input)
+ 
+ #100;
+
+ d <= 8'b00000001;
+
+ #100;
+
+ d <= 8'b00000010;
+
+ #100;
+
+ d <= 8'b00000011;
+
+ #100;
+
+ d <= 8'b00000100;
+
+ #100;
+
+ d <= 8'b00000101;
+
+ #100;
+
+ d <= 8'b00000111;
+
+ #100;
+
+ d <= 8'b11111110;
+
+ #100;
+
+ d <= 8'b11111111;
+
+end 
+endmodule 

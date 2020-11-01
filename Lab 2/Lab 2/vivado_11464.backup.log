@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Oct 31 19:31:07 2020
+# Process ID: 11464
+# Current directory: C:/Users/mcvle/Desktop/341-Lab-2/Lab 2/Lab 2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13412 C:\Users\mcvle\Desktop\341-Lab-2\Lab 2\Lab 2\Lab 2.xpr
+# Log file: C:/Users/mcvle/Desktop/341-Lab-2/Lab 2/Lab 2/vivado.log
+# Journal file: C:/Users/mcvle/Desktop/341-Lab-2/Lab 2/Lab 2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/mcvle/Desktop/341-Lab-2/Lab 2/Lab 2/Lab 2.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:09 . Memory (MB): peak = 1018.938 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 31 19:32:21 2020...

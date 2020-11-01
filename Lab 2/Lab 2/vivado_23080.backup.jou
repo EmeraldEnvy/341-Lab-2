@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Oct 31 19:03:47 2020
+# Process ID: 23080
+# Current directory: C:/Users/mcvle/Desktop/341-Lab-2/Lab 2/Lab 2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21148 C:\Users\mcvle\Desktop\341-Lab-2\Lab 2\Lab 2\Lab 2.xpr
+# Log file: C:/Users/mcvle/Desktop/341-Lab-2/Lab 2/Lab 2/vivado.log
+# Journal file: C:/Users/mcvle/Desktop/341-Lab-2/Lab 2/Lab 2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/mcvle/Desktop/341-Lab-2/Lab 2/Lab 2/Lab 2.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source RegFile.tcl
+add_force {/RegFile/clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps -cancel_after 1000ns
+add_force {/RegFile/reset} -radix hex {1 0ns} -cancel_after 100ns
+add_force {/RegFile/rg_wrt_en} -radix hex {0 0ns}
+add_force {/RegFile/rg_wrt_addr} -radix bin {10010 0ns}
+add_force {/RegFile/rg_wrt_data} -radix hex {1 0ns}
+run 10 ns
+add_force {/RegFile/rg_wrt_en} -radix hex {1 0ns}
+run 10 ns
+add_force {/RegFile/reset} -radix hex {0 0ns}
+run 10 ns
+add_force {/RegFile/reset} -radix hex {1 0ns} -cancel_after 100ns
+run 10 ns
+run 110 ns
+close_sim
+launch_simulation
+source RegFile.tcl
+add_force {/RegFile/clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps -cancel_after 1000ns
+add_force {/RegFile/reset} -radix hex {1 0ns} -cancel_after 100ns
+add_force {/RegFile/rg_wrt_en} -radix hex {1 0ns}
+add_force {/RegFile/rg_wrt_addr} -radix bin {10010 0ns}
+add_force {/RegFile/rg_wrt_data} -radix hex {1 0ns}
+run 110 ns
+run all
+close_sim
